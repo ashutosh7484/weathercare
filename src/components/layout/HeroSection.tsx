@@ -72,7 +72,7 @@ export function HeroSection() {
         </motion.div>
 
         {/* Feature pills */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
@@ -93,7 +93,7 @@ export function HeroSection() {
               <span>{feat.label}</span>
             </div>
           ))}
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   )
