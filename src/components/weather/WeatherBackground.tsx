@@ -57,30 +57,15 @@ function useCursorCanvas() {
     function loop() {
       ctx.clearRect(0, 0, W, H)
 
-      // Lerp each ring toward the one before it
+      // Single smooth dot — lerps toward cursor
       rings[0].x += (target.x - rings[0].x) * rings[0].lag
       rings[0].y += (target.y - rings[0].y) * rings[0].lag
-      for (let i = 1; i < rings.length; i++) {
-        rings[i].x += (rings[i - 1].x - rings[i].x) * rings[i].lag
-        rings[i].y += (rings[i - 1].y - rings[i].y) * rings[i].lag
-      }
 
-      // Draw rings back-to-front (largest first = most lag)
-      for (let i = rings.length - 1; i >= 0; i--) {
-        const r = rings[i]
-        ctx.save()
-        ctx.globalAlpha = r.alpha
-        ctx.strokeStyle = '#ffffff'
-        ctx.lineWidth = 1
-        ctx.beginPath()
-        ctx.arc(r.x, r.y, r.size, 0, Math.PI * 2)
-        ctx.stroke()
-        ctx.restore()
-      }
-
-      // Solid dot at actual cursor position
+      // Just one tiny glowing dot — no rings
       ctx.save()
-      ctx.globalAlpha = 0.9
+      ctx.globalAlpha = 0.45
+      ctx.shadowColor = '#ffffff'
+      ctx.shadowBlur = 8
       ctx.fillStyle = '#ffffff'
       ctx.beginPath()
       ctx.arc(rings[0].x, rings[0].y, 3, 0, Math.PI * 2)
@@ -297,9 +282,7 @@ function useSceneCanvas(theme: string, tier: string) {
       mouse.vx = e.clientX - mouse.px; mouse.vy = e.clientY - mouse.py
       mouse.px = mouse.x; mouse.py = mouse.y
       mouse.x = e.clientX; mouse.y = e.clientY
-      const now = Date.now()
-      const sp = Math.hypot(mouse.vx, mouse.vy)
-      if (now - lastCursor > 90 && sp > 2) { lastCursor = now; spawnCursor(mouse.x, mouse.y) }
+      // Cursor particles disabled — background animation only
     }
     window.addEventListener('mousemove', onMove)
 

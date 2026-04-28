@@ -56,7 +56,7 @@ export function HeroSection() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="text-slate-400 text-base font-body font-light max-w-xl mx-auto mb-10 leading-[1.8] tracking-wide"
         >
-          Beyond forecasts — Gemini AI delivers{' '}
+          Beyond forecasts AI delivers{' '}
           <span className="text-sky-300 font-medium">hyperlocal safety advice</span>, health tips,
           clothing guidance, and emergency alerts tailored to exactly where you are.
         </motion.p>
@@ -80,7 +80,7 @@ export function HeroSection() {
         >
           {[
             { icon: '🌍', label: 'Auto Location' },
-            { icon: '🤖', label: 'Gemini AI' },
+            // { icon: '🤖', label: 'Gemini AI' },
             { icon: '📍', label: 'Hyperlocal' },
             { icon: '⚡', label: 'Real-time' },
             { icon: '🛡️', label: 'Safety First' },

@@ -261,8 +261,8 @@ function getFallbackAdvice(params: {
     )
     alerts.push({ type: 'caution', title: '🌧️ Rain Advisory', message: 'Wet and slippery conditions. Drive carefully and avoid waterlogged areas.' })
   } else if (isHot) {
-    precautions.push('Stay hydrated — drink water every hour', 'Avoid direct sunlight between 11am–4pm', 'Use sunscreen SPF 50+', 'Take breaks in shaded areas', 'Never leave children in parked vehicles')
-    healthAdvice.push('Risk of heat stroke — watch for dizziness', 'Wear UV-protective sunglasses', 'Eat light meals', 'Avoid alcohol and caffeinated drinks')
+    precautions.push('Stay hydrated, drink water every hour', 'Avoid direct sunlight between 11am–4pm', 'Use sunscreen SPF 50+', 'Take breaks in shaded areas', 'Never leave children in parked vehicles')
+    healthAdvice.push('Risk of heat stroke, watch for dizziness', 'Wear UV-protective sunglasses', 'Eat light meals', 'Avoid alcohol and caffeinated drinks')
     clothing.push('Wear light-colored cotton clothes', 'Cover head with cap or scarf', 'Avoid dark colors that absorb heat')
     travelAdvice.push('Plan travel for early morning or evening', 'Keep water in vehicle', 'Check vehicle cooling system')
     emergencyTips.push('Heat stroke first aid: move to shade, apply cold water', 'Emergency: 108', 'Know the nearest hospital')
@@ -280,7 +280,7 @@ function getFallbackAdvice(params: {
     alerts.push({ type: 'caution', title: '❄️ Snowfall Alert', message: `Snow reported in ${city}. Roads may be slippery.` })
     precautions.push('Avoid driving unless absolutely necessary', 'Wear non-slip footwear', 'Keep body covered fully', 'Watch for black ice on roads', 'Check on elderly neighbours')
     clothing.push('Heavy winter coat, gloves, and thermal layers', 'Waterproof snow boots essential', 'Cover ears and neck — frostbite risk')
-    healthAdvice.push('Hypothermia risk — limit time outdoors', 'Keep children and elderly indoors', 'Stay dry — wet clothes accelerate heat loss', 'Hot drinks help maintain body temperature')
+    healthAdvice.push('Hypothermia risk — limit time outdoors', 'Keep children and elderly indoors', 'Stay dry, wet clothes accelerate heat loss', 'Hot drinks help maintain body temperature')
     travelAdvice.push('Delay travel until roads are cleared', 'If driving: slow down and increase following distance', 'Public transport may be delayed — check updates')
     localInsights.push(`Snow in ${city} is unusual — local infrastructure may not be prepared`, 'Road salt and gritting may be limited — walk carefully')
   } else if (isCold) {
@@ -288,7 +288,7 @@ function getFallbackAdvice(params: {
     alerts.push({ type: 'info', title: '🧊 Cold Weather Advisory', message: `Temperature is low in ${city}. Layer up before heading out.` })
     precautions.push('Wear warm layers before stepping out', 'Protect extremities — gloves and scarf recommended', 'Avoid prolonged exposure to cold wind', 'Keep children and elderly warm indoors', 'Check on vulnerable neighbours')
     clothing.push('Thermal inner layer + sweater + outer jacket', 'Warm socks and closed shoes', 'Scarf, gloves, and beanie if windy')
-    healthAdvice.push('Cold air can trigger asthma — carry inhaler', 'Risk of joint pain in cold weather', 'Wash hands frequently to avoid cold and flu', 'Stay hydrated — cold weather masks thirst')
+    healthAdvice.push('Cold air can trigger asthma, carry inhaler', 'Risk of joint pain in cold weather', 'Wash hands frequently to avoid cold and flu', 'Stay hydrated — cold weather masks thirst')
     travelAdvice.push('Roads may be slippery if temperature drops below 5°C', 'Allow extra warm-up time for vehicles', 'Two-wheelers: wear windproof riding gear')
     localInsights.push(`Cold mornings in ${city} — air quality may be affected by heating smoke and reduced circulation`, 'Outdoor vendors and workers are at higher risk — carry warm drinks if possible')
   } else if (temp >= 30 && temp < 38) {
