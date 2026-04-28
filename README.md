@@ -6,16 +6,12 @@
 
 ### *Weather that keeps you safe.*
 
-**The AI-powered weather app that doesn't just show the forecast —**  
+**The AI-powered weather app that doesn't just show the forecast **  
 **it tells you what to do about it.**
 
 <br/>
 
 [![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-weathercare--pearl.vercel.app-0ea5e9?style=for-the-badge)](https://weathercare-pearl.vercel.app)
-[![Made with React](https://img.shields.io/badge/React-18-61dafb?style=for-the-badge&logo=react&logoColor=white)](https://react.dev)
-[![Powered by Gemini](https://img.shields.io/badge/Gemini-AI-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://aistudio.google.com)
-[![OpenWeatherMap](https://img.shields.io/badge/OpenWeatherMap-API-orange?style=for-the-badge)](https://openweathermap.org)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178c6?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org)
 
 <br/>
 
@@ -29,7 +25,7 @@
 
 Most weather apps stop at a number. **47°C? Just "Sunny ☀️".**
 
-India doesn't just have weather — it has *extreme* weather. Heatwaves that hospitalise. Monsoons that flood streets overnight. Dense fog that shuts down highways. And every standard weather app just shows a number and calls it a day.
+India doesn't just have weather it has *extreme* weather. Heatwaves that hospitalise. Monsoons that flood streets overnight. Dense fog that shuts down highways. And every standard weather app just shows a number and calls it a day.
 
 **WeathCare is different.** It uses Google Gemini AI to read your exact location and tell you what *actually* matters:
 
@@ -44,7 +40,7 @@ India doesn't just have weather — it has *extreme* weather. Heatwaves that hos
 ## ✨ Features
 
 ### 🤖 AI-Powered Hyperlocal Advice
-Gemini AI receives your exact coordinates and live weather data, then generates advice specific to your city's geography — mentioning real local risks like flood-prone areas, water bodies, crowded markets, and disease risks after rain.
+Gemini AI receives your exact coordinates and live weather data, then generates advice specific to your city's geography mentioning real local risks like flood-prone areas, water bodies, crowded markets, and disease risks after rain.
 
 ### 🌦️ Immersive Weather Backgrounds
 The entire UI transforms based on your current weather:
@@ -63,18 +59,18 @@ The entire UI transforms based on your current weather:
 - 5-day forecast with temperature trend chart
 
 ### 🛡️ Smart Safety System
-- **Risk Level** — Low / Moderate / High / Extreme with score
-- **Can I Go Out?** — Clear verdict with reason
-- **Best Time to Go Outside** — specific time window
-- **Travel Safety Score** — 0–10 rating
-- **Color-coded alerts** — Red / Yellow / Green
+- **Risk Level** Low / Moderate / High / Extreme with score
+- **Can I Go Out?** Clear verdict with reason
+- **Best Time to Go Outside** specific time window
+- **Travel Safety Score** 0–10 rating
+- **Color-coded alerts** Red / Yellow / Green
 
 ### 📍 Hyperlocal Insights
-AI-generated advice specific to your city — not generic tips. If it's raining in Dhanbad, it knows about local ponds and drainage. If it's 45°C in Delhi, it knows about outdoor laborers and street food safety.
+AI-generated advice specific to your city not generic tips. If it's raining in Dhanbad, it knows about local ponds and drainage. If it's 45°C in Delhi, it knows about outdoor laborers and street food safety.
 
 ### 🚨 Emergency Page
 - Emergency contacts (India: 112, 108, 101, 100)
-- Scenario-specific guides — Thunderstorm, Flood, Heatwave, Cyclone, Fog
+- Scenario-specific guides Thunderstorm, Flood, Heatwave, Cyclone, Fog
 - Interactive preparedness checklist with progress tracking
 
 ### 📱 Fully Responsive
