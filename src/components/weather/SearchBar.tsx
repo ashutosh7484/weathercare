@@ -29,10 +29,9 @@ export function SearchBar() {
     setIsFocused(false)
   }
 
-  const handleLocation = async () => {
+  const handleLocation = () => {
     setLocating(true)
-    await fetchByLocation()
-    setLocating(false)
+    fetchByLocation().finally(() => setLocating(false))
   }
 
   const handleSaveCity = () => {
@@ -105,12 +104,12 @@ export function SearchBar() {
             onClick={handleLocation}
             disabled={locating}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center gap-2 px-5 py-4 text-sky-400 hover:text-sky-300 transition-colors font-display text-sm font-semibold disabled:opacity-50"
+            className="flex items-center gap-2 px-5 py-4 text-sky-400 hover:text-sky-300 transition-colors font-display text-sm font-semibold disabled:opacity-50 min-w-[48px] min-h-[48px]"
           >
             {locating ? (
-              <Loader2 className="w-4 h-4 animate-spin" />
+              <Loader2 className="w-5 h-5 animate-spin" />
             ) : (
-              <MapPin className="w-4 h-4" />
+              <MapPin className="w-5 h-5" />
             )}
             <span className="hidden sm:block">Locate Me</span>
           </motion.button>
